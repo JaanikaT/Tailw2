@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -46,7 +48,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Inter, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -444,7 +446,13 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+h1, h2, h3, h4, h5, h6, p{
+  font-family: Inter, sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -494,7 +502,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -544,15 +552,192 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.mx-\[6px\]{
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
-.underline {
-  text-decoration-line: underline;
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-1\/5{
+  width: 20%;
+}
+
+.w-1\/6{
+  width: 16.666667%;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.content-between{
+  align-content: space-between;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.justify-around{
+  justify-content: space-around;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.border-\[1px\]{
+  border-width: 1px;
+}
+
+.border-solid{
+  border-style: solid;
+}
+
+.border-\[\#FFFFFF33\]{
+  border-color: #FFFFFF33;
+}
+
+.border-\[\#FFFFFF33\]\/20{
+  border-color: rgb(255 255 255 / 0.2);
+}
+
+.border-\[\#FFFFFF33\]\/50{
+  border-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-\[\]{
+  background-color: ;
+}
+
+.bg-\[\#48319D\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 49 157 / var(--tw-bg-opacity));
+}
+
+.bg-\[ur\]{
+  background-color: ur;
+}
+
+.bg-\[url\]{
+  background-color: url;
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-contain{
+  background-size: contain;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-\[6px\]{
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.pb-\[30px\]{
+  padding-bottom: 30px;
+}
+
+.pb-\[\]{
+  padding-bottom: ;
+}
+
+.pt-\[11px\]{
+  padding-top: 11px;
+}
+
+.pt-\[px\]{
+  padding-top: px;
+}
+
+.pt-3{
+  padding-top: 0.75rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pb-7{
+  padding-bottom: 1.75rem;
+}
+
+.align-bottom{
+  vertical-align: bottom;
+}
+
+.text-\[34px\]{
+  font-size: 34px;
+}
+
+.text-\[96px\]{
+  font-size: 96px;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-light{
+  font-weight: 300;
+}
+
+.leading-6{
+  line-height: 1.5rem;
+}
+
+.leading-\[41px\]{
+  line-height: 41px;
+}
+
+.leading-\[70px\]{
+  line-height: 70px;
 }

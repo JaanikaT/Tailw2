@@ -9,7 +9,7 @@
 </head>
 
 <body class="flex flex-col">
-    <div class="flex flex-col content-between h-screen bg-cover" style="background-image: url(./assets/background.jpg), url(./assets/Rectangle_low-back.png)">
+    <div class="flex flex-col h-screen bg-cover" style="background-image: url(./assets/background.jpg)">
         <section class="flex flex-col w-full h-full items-center mt-20">
             <p class="font-light text-[34px] leading-[41px]">Coimbatore</p>
             <p class="font-light text-[96px] leading-[70px]">19°</p>
@@ -19,13 +19,14 @@
                 <p>L:18°</p>
             </div>
         </section>
-        <section name="forecasts" class="flex flex-col">
-            
-            <section class="flex justify-between px-4">
-                <p class="flex">Hourly Forecast</p>
-                <p class="flex">Weekly Forecast</p>
+        <section name="forecasts" class="flex flex-col content-end bg-[url(./assets/Rectangle_low-back.png)]">
+            <!-- kriips ei lähe alumises osas keskele  -->
+            <section class="flex mt-4 w-12 h-1.5 bg-black/30 rounded-[30px]"></section>
+            <section class="flex justify-between mt-8 mb-1 px-4 border-b-[3px] border-white/50">
+                <p class="flex font-normal text-[#EBEBF5]/60 text-[17px] leading-[22px]">Hourly Forecast</p>
+                <p class="flex font-normal text-[#EBEBF5]/60 text-[17px] leading-[22px]">Weekly Forecast</p>
             </section>
-            <section class="flex justify-around">
+            <section class="flex justify-around pb-6">
                 <div class="flex flex-col items-center border-solid border-[1px] border-[#FFFFFF33]/20 rounded-full pt-3 pb-7 w-1/7">
                     <p>12 AM</p>
                     <img src="./assets/Icon12AM.svg">
@@ -52,10 +53,13 @@
                     <p>19°</p>
                 </div>
             </section>
-            <section class="flex justify-evenly mb-3">
-                <img src="">
-                <img src="">
-                <img src="">
+            <section name="tapbar" class="flex justify-around align-middle mb-3">
+                <img src="./assets/Mapstick.svg">
+                <div class="flex w-[64px] h-[64px] bg-white rounded-full justify-center">
+                    <div class="w-[58px] h-[58px] rounded-full bg-gradient-to-l from-white to-[#BBBFC7] border-[0.2px] border-[#AEAEAE]">
+                    </div>
+                </div>
+                <img src="./assets/ListHam.svg">
             </section>
         </section>
     </div>

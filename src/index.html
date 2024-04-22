@@ -19,8 +19,8 @@
                 <p>L:18°</p>
             </div>
         </section>
-        <section name="forecasts" class="flex flex-col content-end bg-[url(./assets/Rectangle_low-back.png)]">
-            <!-- kriips ei lähe alumises osas keskele  -->
+        <section name="forecasts" class="flex flex-col content-end bg-[url(./assets/Rectangle_low-back.png)] bg-cover">
+            <!-- kriips ei lähe alumises osas keskele, ei tööta m-auto, mx-auto, justify-(items/self)center  -->
             <section class="flex mt-4 w-12 h-1.5 bg-black/30 rounded-[30px]"></section>
             <section class="flex justify-between mt-8 mb-1 px-4 border-b-[3px] border-white/50">
                 <p class="flex font-normal text-[#EBEBF5]/60 text-[17px] leading-[22px]">Hourly Forecast</p>
@@ -32,11 +32,15 @@
                     <img src="./assets/Icon12AM.svg">
                     <p>19°</p>
                 </div>
-                <div class="flex flex-col items-center border-solid border-[1px] border-[#FFFFFF33]/50 rounded-full pt-3 pb-7 w-1/7 bg-[#48319D]">
-                    <p>Now</p>
-                    <img src="./assets/IconNOW.svg">
-                    <p>19°</p>
-                </div>
+                <a href="./city_details.html">
+                    <div class="flex flex-col items-center border-solid border-[1px] border-[#FFFFFF33]/50 rounded-full pt-3 pb-7 w-1/7 bg-[#48319D]">
+                
+                        <p>Now</p>
+                        <img src="./assets/IconNOW.svg">
+                        <p>19°</p>
+                    
+                    </div>
+                </a>
                 <div class="flex flex-col items-center border-solid border-[1px] border-[#FFFFFF33]/20 rounded-full pt-3 pb-7 w-1/7">
                     <p>2 AM</p>
                     <img src="./assets/Icon2AM.svg">

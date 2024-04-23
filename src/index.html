@@ -9,14 +9,15 @@
 </head>
 
 <body class="flex flex-col">
+    <!-- Teine font puudu, maja pilt (vb teha alumine kast ka lihtsalt opacityga peale, hetkel pilt), kriips keskele -->
     <div class="flex flex-col h-screen bg-cover" style="background-image: url(./assets/background.jpg)">
         <section class="flex flex-col w-full h-full items-center mt-20">
-            <p class="font-light text-[34px] leading-[41px]">Coimbatore</p>
-            <p class="font-light text-[96px] leading-[70px]">19°</p>
-            <p class="font-light text-xl leading-6 text-[#EBEBF5]/0.6">Mostly clear</p>
+            <p class="font-normal text-[34px] leading-[41px] tracking-[0.37px] pb-2">Coimbatore</p>
+            <p class="font-normal text-[96px] leading-[70px] tracking-[0.37px] pb-3">19°</p>
+            <p class="font-normal text-xl leading-6 text-[#EBEBF5]/60">Mostly clear</p>
             <div class="flex gap-6">
-                <p>H:24°</p>
-                <p>L:18°</p>
+                <p class="font-normal text-xl leading-6">H:24°</p>
+                <p class="font-normal text-xl leading-6">L:18°</p>
             </div>
         </section>
         <section name="forecasts" class="flex flex-col content-end bg-[url(./assets/Rectangle_low-back.png)] bg-cover">
@@ -27,18 +28,18 @@
                 <p class="flex font-normal text-[#EBEBF5]/60 text-[17px] leading-[22px]">Weekly Forecast</p>
             </section>
             <section class="flex justify-around pb-6">
-                <div class="flex flex-col items-center border-solid border-[1px] border-[#FFFFFF33]/20 rounded-full pt-3 pb-7 w-1/7">
-                    <p>12 AM</p>
-                    <img src="./assets/Icon12AM.svg">
-                    <p>19°</p>
-                </div>
+                <a href="./city_details.html">
+                    <div class="flex flex-col items-center border-solid border-[1px] border-[#FFFFFF33]/20 rounded-full pt-3 pb-7 w-1/7">
+                        <p>12 AM</p>
+                        <img src="./assets/Icon12AM.svg">
+                        <p>19°</p>
+                    </div>
+                </a>    
                 <a href="./city_details.html">
                     <div class="flex flex-col items-center border-solid border-[1px] border-[#FFFFFF33]/50 rounded-full pt-3 pb-7 w-1/7 bg-[#48319D]">
-                
                         <p>Now</p>
                         <img src="./assets/IconNOW.svg">
-                        <p>19°</p>
-                    
+                        <p>19°</p> 
                     </div>
                 </a>
                 <div class="flex flex-col items-center border-solid border-[1px] border-[#FFFFFF33]/20 rounded-full pt-3 pb-7 w-1/7">
@@ -58,7 +59,7 @@
                 </div>
             </section>
             <section name="tapbar" class="flex justify-around align-middle mb-3">
-                <img src="./assets/Mapstick.svg">
+                <a href="search_city.html"><img src="./assets/Mapstick.svg"></a>
                 <div class="flex w-[64px] h-[64px] bg-white rounded-full justify-center">
                     <div class="w-[58px] h-[58px] rounded-full bg-gradient-to-l from-white to-[#BBBFC7] border-[0.2px] border-[#AEAEAE]">
                     </div>
